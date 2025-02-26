@@ -1,3 +1,5 @@
+; Download AutoIt at: https://www.autoitscript.com/site/autoit/downloads/
+
 #include <ButtonConstants.au3>
 #include <EditConstants.au3>
 #include <GUIConstantsEx.au3>
@@ -12,7 +14,6 @@ If NOT FileExists($fIni) Then
 	$fLoc = FileOpenDialog("Keywords.ini not found", @ScriptDir, "(*.ini)", "Keywords.ini")
 	If StringRight($fLoc, 12) = "Keywords.ini" Then
 		$fIni = $fLoc
-
 	Else
 		MsgBox(0, "Error", "Please download the Keywords.ini file and" & @CRLF & "place it in the same directory as this script.")
 		Exit
